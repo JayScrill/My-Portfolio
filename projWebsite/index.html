@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/assets/css/all.css" rel="stylesheet">
+    <title>Responsive Portfolio</title>
+</head>
+
+<body>
+    <!--Creating Menu Tabs & Logo at Top Using HTML-->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <!--Creating Banner Layout in HTML-->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br> <span>Joel Jimenez</span></h2>
+            <h3>I'm a Full Stack Web Developer.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <!-- Creating About Me Layout in HTML-->
+
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know Me</p>
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src="images/pexels-jack-winbow-1559486.jpg" alt="portrait of me" class="proPic">
+            </div>
+        </div>
+        <div class="contextBx w50">
+            <h3>Who am I?</h3>
+            <br>
+            <h2>I'm <b>Joel Jimenez</b>, a Full Stack Well Developer</h2>
+            <br>
+            <p>I got into Web Development because of how challenging it seamed, the freedom there is and how
+                creative you can get writing code. I enjoy learning new things and challenging myself to have a deeper
+                understaning of all
+                things to improve
+                upon my skills and share my knowledge with others. The challenges and end
+                result make coding very rewarding and worthwhile. On my spare time I enjoy
+                long walks with my dog, play football (soccer), socializing with friends, and playing video games. </p>
+            <br>
+            My interests don't stop here though. I've always been interested in taking things to the next level through
+            cyber security. The things I learn today will give me the ability to help others from unseen
+            threats making our world slightly safer from any and all outside threats.
+            <br>
+            <br>
+            <h2>Skills & Knowledge In</h2>
+            <br>
+            <ul>
+                <li>HTML
+                    <div class="progress">
+                        <span class="progress-bar" style="width: 80%"></span>
+                    </div>
+                </li>
+
+                <li>CSS
+                    <div class="progress">
+                        <span class="progress-bar" style="width: 70%"></span>
+                    </div>
+                </li>
+                <li>JavaScript
+                    <div class="progress">
+                        <span class="progress-bar" style="width: 50%"></span>
+                    </div>
+                </li>
+                <li>ITIL
+                    <div class="progress">
+                        <span class="progress-bar" style="width: 75%"></span>
+                    </div>
+                </li>
+                <li>ServiceNow
+                    <div class="progress">
+                        <span class="progress-bar" style="width: 65%"></span>
+                    </div>
+                </li>
+                <li>MondoDB
+                    <div class="progress">
+                        <span class="progress-bar" style="width: 25%"></span>
+                    </div>
+                </li>
+            </ul>
+            <br>
+            <h2><strong>My Personal Why</strong></h2>
+            <br>
+            <p>The more knowledge and understaning we have of things whether it be tech, life, or business, we can bring
+                value and purpose to others and grow together.</p>
+            <div class="heading bottom">
+                <a href="images/Joel Jimenez Resume 2022-1.pdf" target="_blank" class="btn round">Resume</a>
+                <!--<a href="images/2.png" target="_blank" class="btn round" id="cover">Cover<br>Letter</a>-->
+                <div class="bt">
+                    <b>Name:</b> Joel Jimenez<br>
+                    <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/joeljimenez890/">LinkedIn Profile</a>
+                </div>
+                <div class="bt">
+                    <b>Email:</b> JoelJ2012@yahoo.com<br>
+                    <b>Location:</b> Blue Springs, MO
+                </div>
+            </div>
+            <div class="heading bottom" class="cover">
+                <a href="images/2.png" target="_blank" class="btn round" id="cover">Cover<br>Letter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Services Layout in HTML -->
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Projects I've Worked On</h2>
+            <p>Check Them Out Below</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <i class="fa-brands fa-js fa-4x"></i>
+                <h3>Web Design CSS</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa-brands fa-bootstrap fa-4x"></i>
+                <h3>Bootstrap Project</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+            <div class="servicesBx">
+                <i class="fa-brands fa-css3-alt fa-4x"></i>
+                <h3>Nasa Rest API</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+            <div class="servicesBx">
+                <i class="fa-brands fa-html5 fa-4x"></i>
+                <h3>Calculator App</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+            <div class="servicesBx">
+                <i class="fa-solid fa-certificate fa-4x"></i>
+                <h3>Certifications</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+            <div class="servicesBx">
+                <i class="fa-brands fa-wordpress fa-4x"></i>
+                <h3>Other Website</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Contact Layout in HTML-->
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me anytime</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Feel free to contact me with any question you might have. Thank you!</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone No :</h3>
+                            <p>(816) 885-8434</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address:</h3>
+                            <p>JoelJ2012@yahoo.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Other Ways To Find Me</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/joeljimenez890/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/JayScrill" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="https://formsubmit.co/JoelJ2012@yahoo.com" method="POST">
+                    <h3>Message Me</h3>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="textarea" id="" rows="6" placeholder="Your Mesage" required></textarea>
+                    <input type="submit" value="Send Message" name="sendmessageBtn">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Creating Footer Layout in HTML-->
+
+    <footer class="copyright">
+        <p>&copy; 2022, Mywebsite.com, Allrights Reserved <a href="https://www.flaticon.com/free-icons/open-menu"
+                title="open menu icons">Open menu icons created by
+                Pixel perfect - Flaticon</a></p>
+    </footer>
+
+
+    <script type="text/javascript" src="portWeb.js"></script>
+</body>
+
+</html>

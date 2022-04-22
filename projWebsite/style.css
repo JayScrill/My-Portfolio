@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Adding All My Section Tag Fixed Padding */
+section {
+    padding: 80px;
+}
+
+
+
+/*Creating Banner Area in CSS */
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    background: url(images/pexels-jack-winbow-1559486.jpg);
+    background-size: cover;
+    background-position: right center;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    color: #444;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.2em;
+    color: #efefef;
+}
+
+.banner h3 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #009e66;
+    display: inline-block;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Creating About Me Layout in CSS */
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading p {
+    font-style: "Syne";
+    font-size: 14px;
+}
+
+.heading h2 {
+    font-size: 3em;
+    color: #009e66
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx {
+    padding-left: 40px;
+    text-align: justify;
+}
+
+
+.proPic {
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+
+.contentBx h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.heading.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn.round {
+    border-radius: 50px;
+}
+
+#cover {
+    font-size: 10px;
+    font-weight: 800;
+    width: 149.25px;
+}
+
+.bt {
+    margin-top: 20px;
+}
+
+.w50 {
+    min-width: 25%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Creating Logo & Menu's Header Using CSS*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+    position: relative;
+
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Creating Sticky Header Menu Nav Bar In CSS*/
+
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #111;
+}
+
+/*Progress Bars*/
+  
+.progress {
+  width: 100%;
+  max-width: 260px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+  
+  .progress-bar {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg,#009e66,#0d71cf 17%,#05dfe6 34%,#0ad89a 51%,#009e66 68%,#0d71cf 85%,#05dfe6 );
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+    
+  @keyframes progress-animation {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0;
+    }
+  }
+
+
+/* Designing Services Layout in CSS*/
+
+.services {
+    background: #111;
+}
+
+.heading.white p {
+    color: white;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx {
+    color: white;
+    background: #161616;
+    margin: 10px 15px;
+    padding: 30px 15px;
+    text-align: center;
+    max-width: 360px;
+}
+
+.services .content .servicesBx:hover {
+    border-bottom: 2px solid #009e66;
+    cursor: pointer;
+}
+
+.services .content .servicesBx .fa-solid {
+    color: #009e66;
+}
+
+.services .content .servicesBx .fa-brands {
+    color: #009e66;
+}
+
+/* Designing Contact Layout in CSs*/
+
+.contact {
+    background: #111;
+}
+
+.formBx {
+    min-width: 60%;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:10px
+}
+
+.formBx form input,
+.formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #161616;
+    color: white;
+    resize: vertical;
+}
+
+.formBx form input:focus,
+.formBx form textarea:focus {
+border-bottom: 1px solid #009e66;
+transition: 0.5s;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+-o-transition: 0.5s;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+    color: #999;
+}
+
+.formBx form input[type="submit"] {
+    background: #009e66;
+    max-width: 250px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.contactInfo {
+    min-width: 40%;
+}
+
+.contactInfo p {
+    color: #999;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    color: #fff;
+    min-width: 40px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+    color: #999;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    color: #009e66;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* Extra Code Not Need for now
+.contactInfoBx .box .text p, address {
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+}*/
+
+
+.contactInfoBx .boxSocial {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    letter-spacing: 15px;
+}
+
+.contactInfoBx .boxSocial .fa-brands {
+    font-size: 42px;
+    color:#009e66;
+    cursor: pointer;
+}
+
+/* Designing Footer Layout in CSS */
+
+footer.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding-right: 10px;
+}
+
+/* Making a Responsive Layout */
+
+@media (max-width: 991px) 
+{
+    header,
+    header.sticky {
+        padding:20px 50px;
+    }
+    header .menu {
+        display:none;
+    }
+    header .menu {
+        position: fixed;
+        background: #fff;
+        display:block;
+        top: 69px;
+        left: -100%;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    header .menu.active {
+        position: fixed;
+        background: #fff;
+        display:block;
+        top: 69px;
+        left: 0;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+
+    header ul li a {
+        font-size:20px;
+        color: #111;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background-image: url(images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active {
+        width: 40px;
+        height: 40px;
+        background-image: url(images/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    /*header.sticky .toggle {
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }*/
+
+    section {
+        padding: 100px 30px;
+    }
+
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+    .banner h3 {
+        font-size: 1em;
+    }
+    .textBx {
+        position: relative;
+        top: 170px;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+        -webkit-border-raius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+    .contentBx {
+        padding:0;
+    }
+    
+    .content .w50 img {
+        display:block;
+        margin: 0 auto 30px auto;
+    }
+    
+    .contentBx h2 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .contentBx h3 {
+        font-size: 20px;
+    }
+    .heading h2 {
+        font-size: 24px;
+    }
+    .contactInfo{
+        margin:10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
