@@ -525,6 +525,65 @@ footer.copyright {
 }
 
 
+.textBx h2 {
+    animation-duration: 5s;
+    animation-name: myframes;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes myframes {
+    0% {
+        margin-left: -400px;
+    }
+    50% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+
+.textBx h3 {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 400px;
+    }
+    50% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.btn {
+    animation-duration: 5s;
+    animation-name: moveup;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveup {
+    0% {
+        bottom: -400px;
+    }
+    50% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+   
 
 
 
