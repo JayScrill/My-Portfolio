@@ -26,14 +26,14 @@ section {
     justify-content: space-between;
     align-items: center;
     background: #111;
-    background: url(images/pexels-jack-winbow-1559486.jpg);
+    background: url(images/For\ My\ Site\ Best.jpg);
     background-size: cover;
     background-position: right center;
 }
 
 .banner h2 {
     font-size: 2.5em;
-    color: #444;
+    color: #555;
     font-weight: 300;
     line-height: 1.5em;
 }
@@ -51,7 +51,7 @@ section {
 
 .btn {
     position: relative;
-    background: #009e66;
+    background: #55127f;
     display: inline-block;
     color: #000;
     margin-top: 20px;
@@ -79,7 +79,7 @@ section {
 
 .heading h2 {
     font-size: 3em;
-    color: #009e66
+    color: #d20a84
 }
 
 
@@ -248,16 +248,16 @@ header.sticky ul li a {
 }
 
 .services .content .servicesBx:hover {
-    border-bottom: 2px solid #009e66;
+    border-bottom: 2px solid #d20a84;
     cursor: pointer;
 }
 
 .services .content .servicesBx .fa-solid {
-    color: #009e66;
+    color: #d20a84;
 }
 
 .services .content .servicesBx .fa-brands {
-    color: #009e66;
+    color: #d20a84;
 }
 
 /* Designing Contact Layout in CSs*/
@@ -298,7 +298,7 @@ header.sticky ul li a {
 
 .formBx form input:focus,
 .formBx form textarea:focus {
-border-bottom: 1px solid #009e66;
+border-bottom: 1px solid #d20a84;
 transition: 0.5s;
 -webkit-transition: 0.5s;
 -moz-transition: 0.5s;
@@ -312,7 +312,7 @@ transition: 0.5s;
 }
 
 .formBx form input[type="submit"] {
-    background: #009e66;
+    background: #d20a84;
     max-width: 250px;
     cursor: pointer;
     font-weight: 600;
@@ -362,7 +362,7 @@ transition: 0.5s;
 }
 
 .contactInfoBx .box .text h3 {
-    color: #009e66;
+    color: #d20a84;
     font-weight: 500;
     margin: 0;
 }
@@ -385,7 +385,7 @@ transition: 0.5s;
 
 .contactInfoBx .boxSocial .fa-brands {
     font-size: 42px;
-    color:#009e66;
+    color:#d20a84;
     cursor: pointer;
 }
 
@@ -565,7 +565,7 @@ footer.copyright {
     }
 }
 
-.btn {
+/*.btn {
     animation-duration: 5s;
     animation-name: moveup;
     animation-iteration-count: 1;
@@ -582,12 +582,40 @@ footer.copyright {
     100% {
         bottom: 0px;
     }
+}*/
+
+header {
+    animation-duration: 3s;
+    animation-name: movedown;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 }
    
+@keyframes movedown {
+    0% {
+        top: -200px;
+    }
+    50% {
+        top: 0px;
+    }
+    100% {
+        top: 0px;
+    }
+}
 
-
-
-
+.btn {
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-name: bounce;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+   
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+} 
 
 
 
