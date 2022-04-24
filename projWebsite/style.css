@@ -61,7 +61,14 @@ section {
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 18px;
+    transition: 0.2s;
 }
+
+.banner .btn:hover {
+    letter-spacing: 6px;
+}
+
+
 
 /* Creating About Me Layout in CSS */
 
@@ -114,6 +121,22 @@ section {
     align-items: center;
 }
 
+
+
+.heading.bottom .btn.round {
+    transition: 0.8s;
+}
+
+
+
+.heading.bottom .btn.round:hover {
+    transform: scale(0.80) translateY(-10px);
+}
+
+
+
+
+
 .btn.round {
     border-radius: 50px;
 }
@@ -135,6 +158,132 @@ section {
 img {
     max-width: 100%;
 }
+
+/*********CSS For The Video*********/
+
+.showcase {
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    /*box-sizing: border-box;
+    margin: 0;
+    padding: 0;*/
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #55127f;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+@media(max-width: 991px) {
+    .showcase, .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+    
+}
+
+
+
+
+
 
 /*Creating Logo & Menu's Header Using CSS*/
 
@@ -325,6 +474,21 @@ transition: 0.5s;
     letter-spacing: 2px;
 }
 
+
+
+
+.formBx .input {
+    transition: 0.9s;
+}
+
+.formBx .input:hover {
+transform: scale(0.90) translateY(2px);
+}
+
+
+
+
+
 .contactInfo {
     min-width: 40%;
 }
@@ -388,6 +552,16 @@ transition: 0.5s;
     color:#d20a84;
     cursor: pointer;
 }
+
+
+.contactInfoBx .boxSocial .fa-brands {
+    transition: 0.5s;
+}
+
+.contactInfoBx .boxSocial .fa-brands:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+
 
 /* Designing Footer Layout in CSS */
 
@@ -603,7 +777,53 @@ header {
     }
 }
 
-.btn {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Extra Test Code For Bounce on the buttons*/
+
+/*.btn {
     animation-duration: 1.5s;
     animation-delay: 2s;
     animation-name: bounce;
@@ -613,9 +833,9 @@ header {
    
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
-} 
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+} */
 
 
 

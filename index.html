@@ -51,8 +51,9 @@
             <br>
             <h2>I'm <b>Joel Jimenez</b>, a Full Stack Well Developer</h2>
             <br>
-            <p>I got into Web Development because of how challenging it seamed, the freedom there is and how
-                creative you can get writing code. I enjoy learning new things and challenging myself to have a deeper
+            <p>I got interested in Web Development because of how challenging it seamed, the freedom and creativity in
+                writing
+                code in incredible to me. I enjoy learning new things and challenging myself to have a deeper
                 understaning of all
                 things to improve
                 upon my skills and share my knowledge with others. The challenges and end
@@ -61,7 +62,7 @@
             <br>
             My interests don't stop here though. I've always been interested in taking things to the next level through
             cyber security. The things I learn today will give me the ability to help others from unseen
-            threats making our world slightly safer from any and all outside threats.
+            threats making our world safer from any and all outside threats.
             <br>
             <br>
             <h2>Skills & Knowledge In</h2>
@@ -119,8 +120,33 @@
             <div class="heading bottom" class="cover">
                 <a href="projWebsite/images/2.png" target="_blank" class="btn round" id="cover">Cover<br>Letter</a>
             </div>
+    </section>
+
+
+
+    <!--************ Background Video ********-->
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">What I Live By</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="/projWebsite/assets/videos/video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Improving</h3>
+            <p>To understand that we will fall short from time to time is how we move forward. Taking accountability and
+                learning from our mistakes is how we improve. We can't improve if we don't move forward. </p>
+
+            <a href="#">Explore</a>
         </div>
     </section>
+
+
 
     <!-- Creating Services Layout in HTML -->
 
@@ -182,6 +208,16 @@
                 <div class="contactInfoBx">
                     <div class="box">
                         <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Location :</h3>
+                            <p>Blue Springs, MO
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div class="text">
@@ -220,7 +256,7 @@
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <textarea name="textarea" id="" rows="6" placeholder="Your Mesage" required></textarea>
-                    <input type="submit" value="Send Message" name="sendmessageBtn">
+                    <input class="input" type="submit" value="Send Message" name="sendmessageBtn">
                 </form>
             </div>
         </div>
@@ -230,9 +266,13 @@
     <!--Creating Footer Layout in HTML-->
 
     <footer class="copyright">
-        <p>&copy; 2022, Mywebsite.com, Allrights Reserved <a href="https://www.flaticon.com/free-icons/open-menu"
-                title="open menu icons">Open menu icons created by
-                Pixel perfect - Flaticon</a></p>
+        <p><a href="#home" onclick="toggleMenu();">Home</a>
+            <a href="#about" onclick="toggleMenu();">About</a>
+            <a href="#contact" onclick="toggleMenu();">Contact</a>
+            <a href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open menu icons
+                created by
+                Pixel perfect - Flaticon</a>
+        </p>
     </footer>
 
 
