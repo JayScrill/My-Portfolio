@@ -312,7 +312,7 @@ transition: 0.5s;
 }
 
 .formBx form input[type="submit"] {
-    background: #d20a84;
+    background: #55127f;
     max-width: 250px;
     cursor: pointer;
     font-weight: 600;
