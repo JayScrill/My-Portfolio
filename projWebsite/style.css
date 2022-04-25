@@ -382,6 +382,12 @@ header.sticky ul li a {
 
 /*Progress Bars*/
   
+
+.contextBx.w50 ul {
+    list-style: none;
+}
+
+
 .progress {
   width: 100%;
   max-width: 260px;
@@ -394,7 +400,7 @@ header.sticky ul li a {
   .progress-bar {
     display: block;
     height: 100%;
-    background: linear-gradient(90deg,#009e66,#0d71cf 17%,#05dfe6 34%,#0ad89a 51%,#009e66 68%,#0d71cf 85%,#05dfe6 );
+    background: linear-gradient(90deg,#d20a84,#55127f  17%,#087CF7 34%,#18E7D0,#d20a84 68%,#55127f 85%,#087CF7 );
     background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
   }
