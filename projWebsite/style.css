@@ -107,7 +107,7 @@ section {
 
 .heading h2 {
     font-size: 3em;
-    color: #d20a84
+    color: #55127f
 }
 
 
@@ -493,7 +493,7 @@ header.sticky ul li a {
 
 .formBx form input:focus,
 .formBx form textarea:focus {
-border-bottom: 1px solid #d20a84;
+border-bottom: 1px solid #087CF7;
 transition: 0.5s;
 -webkit-transition: 0.5s;
 -moz-transition: 0.5s;
