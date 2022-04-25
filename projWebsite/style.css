@@ -29,6 +29,7 @@ section {
     background: url(images/For\ My\ Site\ Best.jpg);
     background-size: cover;
     background-position: right center;
+    min-width: 600px;
 }
 
 
@@ -411,7 +412,7 @@ header.sticky ul li a {
 /* Designing Services Layout in CSS*/
 
 .services {
-    background: #111;
+    background: #16171C;
 }
 
 .heading.white p {
@@ -427,30 +428,31 @@ header.sticky ul li a {
 
 .services .content .servicesBx {
     color: white;
-    background: #161616;
+    /*background: #0F1013;*/
     margin: 10px 15px;
     padding: 30px 15px;
     text-align: center;
     max-width: 360px;
+    background-image: linear-gradient(to right, #d20a84, #55127f);
 }
 
 .services .content .servicesBx:hover {
-    border-bottom: 2px solid #d20a84;
+    border-bottom: 2px solid #087CF7;
     cursor: pointer;
 }
 
 .services .content .servicesBx .fa-solid {
-    color: #d20a84;
+    color: #22242A;
 }
 
 .services .content .servicesBx .fa-brands {
-    color: #d20a84;
+    color: #22242A;
 }
 
 /* Designing Contact Layout in CSs*/
 
 .contact {
-    background: #111;
+    background: #16171C;
 }
 
 .formBx {
@@ -478,7 +480,7 @@ header.sticky ul li a {
     background: transparent;
     border: none;
     outline: none;
-    background: #161616;
+    background: #0F1013;
     color: white;
     resize: vertical;
 }
@@ -581,13 +583,13 @@ transform: scale(0.90) translateY(2px);
 .contactInfoBx .boxSocial {
     display: flex;
     flex-direction: row;
-    padding-left: 60px;
-    letter-spacing: 15px;
+    padding-left: 55px;
+    letter-spacing: 45px;
 }
 
 .contactInfoBx .boxSocial .fa-brands {
     font-size: 42px;
-    color:#d20a84;
+    color:#55127f;
     cursor: pointer;
 }
 
