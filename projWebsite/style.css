@@ -12,8 +12,7 @@
 
 /* Adding All My Section Tag Fixed Padding */
 section {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 80px;
 }
 
 
@@ -648,6 +647,10 @@ footer.copyright {
     color: #fff;
     text-align: center;
     padding-right: 10px;
+}
+
+.copyright a {
+   color: #d20a84
 }
 
 /* Making a Responsive Layout */
