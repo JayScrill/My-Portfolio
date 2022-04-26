@@ -12,7 +12,8 @@
 
 /* Adding All My Section Tag Fixed Padding */
 section {
-    padding: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 
@@ -22,6 +23,8 @@ section {
 .banner {
     position: relative;
     min-height: 100vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,6 +100,7 @@ section {
 .about {
     padding-top: 2vw;
     padding-bottom: 2vh;
+    position: relative;
 }
 
 .heading {
@@ -141,42 +145,41 @@ section {
     margin-bottom: 10px;
 }
 
-.heading.bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+.contextBx.w50 p {
+    padding-bottom: 10px;
 }
 
+.heading.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
 
 
 .heading.bottom .btn.round {
     transition: 0.8s;
 }
 
-
+.bt {
+    padding: 15px;
+}
 
 .heading.bottom .btn.round:hover {
     transform: scale(0.80) translateY(-10px);
 }
 
 
-
-
-
 .btn.round {
     border-radius: 50px;
 }
 
-#cover {
-    font-size: 10px;
-    font-weight: 800;
-    width: 149.25px;
-}
 
-.bt {
-    margin-top: 20px;
-}
+/* TEST MARGIN*/
+/*.bt {
+    margin-top: 10px;
+}*/
 
 .w50 {
     min-width: 25%;
@@ -222,7 +225,7 @@ img {
     cursor: pointer;
 }
 
-.toggle {
+.toggle2 {
     position: relative;
     width: 60px;
     height: 60px;
