@@ -175,10 +175,7 @@ section {
 }
 
 
-/* TEST MARGIN*/
-/*.bt {
-    margin-top: 10px;
-}*/
+
 
 .w50 {
     min-width: 25%;
@@ -456,6 +453,13 @@ header.sticky ul li a {
     background-image: linear-gradient(to right, #d20a84, #55127f);
 }
 
+.services .content .servicesBx:hover {
+        border: solid 1px #CCC;
+        -moz-filter: drop-shadow(3px 3px 2px #33353b);
+        -webkit-filter: drop-shadow(3px 3px 2px #33353b);
+        filter: drop-shadow(4px 3px 2px #33353b);
+}
+
 .services .content .servicesBx a {
     color: #fff;
 }
@@ -479,17 +483,11 @@ header.sticky ul li a {
 
 /******* Certification Projects ****************/
 
-/*.backimg {
-    background-image: url(/projWebsite/images/pexels-george-becker-363109\(1\).jpg);
-    object-fit: cover; 
-    justify-content: center;
-    align-items: center;
-}*/
+
 
 
 
 .certification {
-    background-color: #16171C;
     background-image: url(images/pexels-nick-demou-2473183.jpg);
     background-position: center;
     background-size: 100%;
@@ -498,10 +496,17 @@ header.sticky ul li a {
     object-fit: cover; 
     justify-content: center;
     align-items: center;
+    /*background-blend-mode: darken;
+    background-color: #d20a84;*/
 }
 
-.heading.cert h2 {
+
+.heading2 h2 {
     color: #fff;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2vw;
 }
 
 .certImages {
@@ -708,12 +713,7 @@ transform: scale(0.90) translateY(2px);
 }
 
 
-/* Extra Code Not Need for now
-.contactInfoBx .box .text p, address {
-    font-style: normal;
-    font-weight: 300;
-    color: #999;
-}*/
+
 
 /******** Recently Added Padding *********/
 .contactInfoBx .boxSocial {
@@ -818,14 +818,7 @@ footer.copyright {
         background-repeat: no-repeat;
         cursor: pointer;
     }
-    /*header.sticky .toggle {
-        filter: invert(1);
-        -webkit-filter: invert(1);
-    }*/
-
-    /*section {
-        padding: 100px 30px;
-    }*/
+    
 
     .banner {
         padding: 150px 50px 100px;
@@ -920,24 +913,6 @@ footer.copyright {
     }
 }
 
-/*.btn {
-    animation-duration: 5s;
-    animation-name: moveup;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes moveup {
-    0% {
-        bottom: -400px;
-    }
-    50% {
-        bottom: 0px;
-    }
-    100% {
-        bottom: 0px;
-    }
-}*/
 
 header {
     animation-duration: 3s;
