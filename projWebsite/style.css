@@ -213,6 +213,7 @@ section {
 
 img {
     max-width: 100%;
+    object-fit: cover;
 }
 
 /*********CSS For The Video Purple Digital *********/
@@ -510,6 +511,115 @@ header.sticky ul li a {
 .services .content .servicesBx .fa-brands {
     color: #22242A;
 }
+
+
+
+
+
+
+
+
+/********* Carousel *************/
+
+
+.proj {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #16171C;
+}
+
+
+.carousel {
+   position: relative;
+   height: 500px;
+   width: 650px;
+   min-width: 400px;
+   margin: 0 auto;
+   background-color: #087CF7;
+}
+
+.carousel_image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button-left {
+    left: -40px;
+}
+
+.carousel_button-right {
+    right: -40px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+    background: rgba(85, 18, 127, 0.75)
+}
+
+.is-hidden {display: none; }
+
+.fa-solid.fa-circle-right {
+    color: #d20a84;
+}
+.fa-solid.fa-circle-left {
+    color: #d20a84;
+}
+
+
 
 
 
