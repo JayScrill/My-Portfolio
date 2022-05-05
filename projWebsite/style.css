@@ -518,18 +518,67 @@ header.sticky ul li a {
 
 
 
+/* Project Heading*/
+
+.worked-on {
+    background-color: #16171C;
+}
+
+
+.proj-Heading h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #55127f;
+}
+
+.proj-Heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.fancy-link {
+    text-decoration: none;
+    color: #d20a84;
+    position: relative;
+}
+
+.fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fancy-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
 
 /********* Carousel *************/
 
 
 .proj {
     position: relative;
-    height: 100%;
+    height: 700px;
     width: 100%;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #16171C;
 }
 
@@ -540,7 +589,6 @@ header.sticky ul li a {
    width: 650px;
    min-width: 400px;
    margin: 0 auto;
-   background-color: #087CF7;
 }
 
 .carousel_image {
@@ -582,11 +630,12 @@ header.sticky ul li a {
 }
 
 .carousel_button-left {
-    left: -40px;
+    left: 5px;
+    z-index: 1;
 }
 
 .carousel_button-right {
-    right: -40px;
+    right: 5px;
 }
 
 .carousel_nav {
