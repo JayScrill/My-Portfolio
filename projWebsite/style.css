@@ -587,7 +587,8 @@ header.sticky ul li a {
    position: relative;
    height: 500px;
    width: 650px;
-   min-width: 300px;
+   min-width: 50%;
+   min-height: 50%;
    margin: 0 auto;
 }
 
