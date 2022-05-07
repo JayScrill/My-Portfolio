@@ -575,8 +575,8 @@ header.sticky ul li a {
     position: relative;
     height: 100%;
     width: 100%;
-    padding: 0;
     display: flex;
+    padding: 5px;
     align-items: center;
     justify-content: center;
     background-color: #16171C;
@@ -704,7 +704,8 @@ header.sticky ul li a {
     width: 100%;
     text-align: center;
     justify-content: center;
-    padding-bottom: 8vh;
+    align-items: center;
+    margin-bottom: 8vh;
     display:flex;
     flex-wrap: wrap;;
 }
