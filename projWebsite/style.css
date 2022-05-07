@@ -703,7 +703,9 @@ header.sticky ul li a {
     font-size: 3em;
     width: 100%;
     text-align: center;
+    justify-content: center;
     padding-bottom: 8vh;
+    display:flex;
     flex-wrap: wrap;;
 }
 
