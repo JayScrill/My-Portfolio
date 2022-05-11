@@ -110,8 +110,6 @@ dotsNav.addEventListener('click', e => {
 
 
 
-
-
   //   let amountToMove = nextSlide.style.left;
 
 //   track.style.transform = 'translateX(-' + amountToMove + ')';

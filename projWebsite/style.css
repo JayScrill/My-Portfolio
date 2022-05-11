@@ -518,7 +518,7 @@ header.sticky ul li a {
 
 
 
-/* Project Heading*/
+/****** Project's I've Worked On Heading*/
 
 .worked-on {
     background-color: #16171C;
@@ -568,6 +568,7 @@ header.sticky ul li a {
 
 
 
+
 /********* Carousel *************/
 
 
@@ -576,10 +577,27 @@ header.sticky ul li a {
     height: 100%;
     width: 100%;
     display: flex;
-    padding: 5px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     align-items: center;
     justify-content: center;
     background-color: #16171C;
+
+    background: linear-gradient(-45deg, #55127f, #d20a84, #087CF7, #23d5ab);
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -687,12 +705,14 @@ header.sticky ul li a {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-repeat: no-repeat;
     position: relative;
+    border-top: 2px solid #087CF7;
     /*background-blend-mode: darken;
     background-color: #d20a84;*/
 }
@@ -705,7 +725,7 @@ header.sticky ul li a {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
     display:flex;
     flex-wrap: wrap;;
 }
